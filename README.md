@@ -4,16 +4,21 @@ This repository is a starter template for integrating DataDoe MCP with **VS Code
 
 ## Table of Contents
 
+- [What you can do with this repo](#what-you-can-do-with-this-repo)
 - [What This Repo Includes](#what-this-repo-includes)
 - [Prerequisites](#prerequisites)
-- [Get DataDoe Subscription and MCP Key](#get-datadoe-subscription-and-mcp-key)
+- [How to get a DataDoe subscription and get MCP Key](#how-to-get-a-datadoe-subscription-and-get-mcp-key)
 - [Configure DataDoe MCP in VS Code + Copilot](#configure-datadoe-mcp-in-vs-code--copilot)
+- [Example prompt library starter pack](#example-prompt-library-starter-pack)
 - [VS Code Copilot Settings](#vs-code-copilot-settings)
 - [DataDoe MCP Configuration Options](#datadoe-mcp-configuration-options)
-- [Validation Checklist](#validation-checklist)
 - [How to Get Help](#how-to-get-help)
-- [Recommended Repository Cleanup](#recommended-repository-cleanup)
-- [Tags](#tags)
+
+## What you can do with this repo
+
+- Connect GitHub Copilot chat to DataDoe MCP in a secure way.
+- Ask Amazon seller questions using DataDoe-backed data.
+- Reuse this setup as a template for new Amazon-focused assistant projects.
 
 ## What This Repo Includes
 
@@ -29,7 +34,7 @@ This repository is a starter template for integrating DataDoe MCP with **VS Code
 - A valid DataDoe subscription
 - A generated DataDoe MCP key
 
-## Get DataDoe Subscription and MCP Key
+## How to get a DataDoe subscription and get MCP Key
 
 1. Go to [app.datadoe.com](https://app.datadoe.com)
 2. Create account
@@ -96,6 +101,19 @@ Replace the config with your key inline:
 
 Reference: [VS Code MCP server docs](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
 
+## Example prompt library starter pack
+
+To help you start faster with an AI Agent + DataDoe MCP workflow, this repo includes a small prompt library at:
+
+- `.vscode/prompts/EXAMPLES.md`
+
+Use it as a starter pack:
+
+1. Open `.vscode/prompts/EXAMPLES.md`.
+2. Copy a prompt block and adjust placeholders (for example `{{seller_name}}`) to your account context.
+3. Run the prompt in GitHub Copilot chat with DataDoe MCP enabled.
+4. Save your own high-performing prompts in the same file to build a reusable internal playbook.
+
 ## VS Code Copilot Settings
 
 VS Code + GitHub Copilot uses these configuration files:
@@ -131,29 +149,9 @@ The MCP server is configured in `.vscode/mcp.json` using `servers` key with `typ
 > Never commit real keys to git.
 > If a key is exposed, rotate it immediately.
 
-## Validation Checklist
-
-- [ ] `.env` is ignored by Git
-- [ ] `.env.example` is tracked by Git
-- [ ] `.gitignore` blocks `.env` and secret files
-- [ ] `.vscode/mcp.json` exists with `datadoe` server
-- [ ] `AGENTS.md` exists at repo root
-- [ ] **MCP: List Servers** in VS Code shows `datadoe` as connected
-
 ## How to Get Help
 
 - Email: [contact@datadoe.com](mailto:contact@datadoe.com)
-
-## Recommended Repository Cleanup
-
-For each repository using this template, keep settings lean:
-
-- Disable GitHub Wiki if not used.
-- Disable GitHub Projects if not used.
-- Disable Discussions if not used.
-- Keep branch protection minimal but enabled for your main branch.
-- Do not commit `.env` or real API keys.
-
-## Tags
-
-`DataDoe` `MCP` `VS Code` `GitHub Copilot` `Amazon` `Amazon Seller` `AI Assistant` `LLM` `Prompting` `E-Commerce` `Online Marketplaces`
+- GitHub Copilot Documentation: [https://docs.github.com/en/copilot](https://docs.github.com/en/copilot)
+- VS Code Documentation: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs)
+- VS Code MCP servers: [https://code.visualstudio.com/docs/copilot/customization/mcp-servers](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
