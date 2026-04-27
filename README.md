@@ -66,7 +66,7 @@ The config uses VS Code's built-in `input` variables so your key is never stored
   "servers": {
     "datadoe": {
       "type": "http",
-      "url": "https://api.datadoe.com/mcp/v1?",
+      "url": "https://api.datadoe.com/mcp/v1",
       "headers": {
         "datadoe-mcp-key": "${input:datadoe-key}"
       }
@@ -84,7 +84,7 @@ Replace the config with your key inline:
   "servers": {
     "datadoe": {
       "type": "http",
-      "url": "https://api.datadoe.com/mcp/v1?",
+      "url": "https://api.datadoe.com/mcp/v1",
       "headers": {
         "datadoe-mcp-key": "YOUR_API_KEY"
       }
@@ -135,7 +135,7 @@ The MCP server is configured in `.vscode/mcp.json` using `servers` key with `typ
   "servers": {
     "datadoe": {
       "type": "http",
-      "url": "https://api.datadoe.com/mcp/v1?",
+      "url": "https://api.datadoe.com/mcp/v1",
       "headers": {
         "datadoe-mcp-key": "${input:datadoe-key}"
       }
