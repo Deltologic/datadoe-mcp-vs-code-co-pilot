@@ -71,7 +71,7 @@ Prepare list of orders for {{seller_name}} seller for last month which order sta
 Use when: You want to create or visualize a clean and modern dashboard for a specific Amazon seller (e.g., for reporting, analysis, executive review, or performance monitoring) with mock or real data.
 
 ```text
-Act as an expert Frontend Developer. Your task is to build a responsive, production-ready Dashboard for a seller named "Delto UK".
+Act as an expert Frontend Developer. Your task is to build a responsive, production-ready Dashboard for a seller named `{{seller_name}}`.
 
 **Project Setup & Execution:**
 1. Create a new directory named `./dashboard` in the current project workspace.
