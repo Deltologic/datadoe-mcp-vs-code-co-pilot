@@ -10,7 +10,7 @@
   "servers": {
     "datadoe": {
       "type": "http",
-      "url": "https://api.datadoe.com/mcp/v1",
+      "url": "https://mcp.datadoe.com/mcp/v1",
       "headers": {
         "datadoe-mcp-key": "${input:datadoe-key}"
       }
